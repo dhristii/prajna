@@ -1,0 +1,44 @@
+{
+  "name": "dna-nexus-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .ts,.vue --max-warnings 0",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.66.0",
+    "axios": "^1.8.2",
+    "chart.js": "^4.4.8",
+    "daisyui": "^4.12.23",
+    "lucide-vue-next": "^0.486.0",
+    "marked": "^15.0.7",
+    "pinia": "^2.3.1",
+    "vue": "^3.4.38",
+    "vue-chartjs": "^5.3.2",
+    "vue-router": "^4.5.0",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vue3-dropzone": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.21.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vue-tsc": "^2.2.8"
+  }
+}
