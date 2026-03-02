@@ -24,12 +24,11 @@ const onDrop = (acceptedFiles: File[]) => {
   if (acceptedFiles.length) emit('files-added', acceptedFiles);
 };
 
+const dropzoneAccept: string[] = ['text/plain', '.txt', 'application/zip', '.zip'];
+
 const { getRootProps, getInputProps, isDragActive } = useDropzone({
   onDrop,
   multiple: true,
-  accept: {
-    'text/plain': ['.txt'],
-    'application/zip': ['.zip']
-  }
+  accept: dropzoneAccept
 });
 </script>
